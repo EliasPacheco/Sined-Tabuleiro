@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O Programa Caminho da Escola tem como objetivo:"
+type = 1
+options = [ "Levar às escolas para dentro das comunidades periféricas", "Promover o fácil acesso aos moradores, professores e alunos as escolas dos seus bairros", "Renovar, padronizar e ampliar a frota de veículos escolares das redes de educação básica pública dos municípios, do Distrito Federal e dos estados" ]
+correct = "Renovar, padronizar e ampliar a frota de veículos escolares das redes de educação básica pública dos municípios, do Distrito Federal e dos estados"
+cor = ""

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Por que é importante que os veículos de transporte escolar sejam equipados com sistemas de monitoramento de rota e velocidade?"
+type = 1
+options = [ "Para aumentar o tempo de viagem e reduzir a eficiência do serviço", "Para fornecer informações em tempo real sobre a localização e o desempenho dos veículos", "Para manter os alunos desinformados sobre o progresso do trajeto" ]
+correct = "Para fornecer informações em tempo real sobre a localização e o desempenho dos veículos"
+cor = ""

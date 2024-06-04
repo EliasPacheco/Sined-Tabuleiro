@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Quais são os principais desafios enfrentados pelas escolas na implementação de programas de alimentação escolar sustentáveis?"
+type = 1
+options = [ "Falta de interesse da comunidade escolar", "Dificuldade em encontrar fornecedores locais de alimentos frescos", "Resistência dos alunos em experimentar novos pratos saudáveis" ]
+correct = "Dificuldade em encontrar fornecedores locais de alimentos frescos"
+cor = ""

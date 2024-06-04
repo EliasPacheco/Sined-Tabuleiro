@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Como as escolas podem lidar de forma eficiente com restrições alimentares e alergias entre os alunos?"
+type = 1
+options = [ "Ignorar as restrições e servir alimentos padrão para todos", "Consultar um único profissional de saúde para orientação", "Implementar um sistema abrangente de identificação e comunicação de restrições" ]
+correct = "Implementar um sistema abrangente de identificação e comunicação de restrições"
+cor = ""

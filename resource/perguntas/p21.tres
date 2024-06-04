@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Como as características do ambiente urbano podem influenciar a eficiência e segurança do transporte escolar?"
+type = 1
+options = [ "Elas não têm impacto significativo no serviço de transporte escolar", "Podem criar desafios adicionais, como tráfego intenso e condições de estrada variadas", "Facilitam a operação do transporte escolar, proporcionando rotas curtas e diretas" ]
+correct = "Podem criar desafios adicionais, como tráfego intenso e condições de estrada variadas"
+cor = ""

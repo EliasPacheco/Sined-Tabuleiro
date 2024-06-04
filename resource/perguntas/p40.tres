@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O que é o Fundeb?"
+type = 1
+options = [ "Um programa de bolsas de estudo para estudantes em situação de vulnerabilidade social", "Uma iniciativa que visa a construção e reforma de escolas públicas em todo o país", "Uma ferramenta de gestão da educação pública que garante recursos para estados e municípios." ]
+correct = "Uma ferramenta de gestão da educação pública que garante recursos para estados e municípios."
+cor = ""

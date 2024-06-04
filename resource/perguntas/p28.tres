@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual é o objetivo principal do PNATE?"
+type = 1
+options = [ "Fornecer alimentação escolar", "Apoiar o transporte dos estudantes das redes públicas de educação básica, residentes em áreas rurais", "Oferecer materiais didáticos gratuitos" ]
+correct = "Apoiar o transporte dos estudantes das redes públicas de educação básica, residentes em áreas rurais"
+cor = ""

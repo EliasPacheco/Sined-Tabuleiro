@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Quais as principais mudanças trazidas pelo novo Fundeb?"
+type = 1
+options = [ "Corte de recursos para a educação infantil e integral", "Centralização da gestão dos recursos nas mãos do Governo Federal ", "Aumento da participação da União no Fundo, destinação de recursos para educação infantil e integral, ampliação da autonomia dos estados e municípios na gestão dos recursos e maior transparência e controle social na aplicação dos recursos" ]
+correct = "Aumento da participação da União no Fundo, destinação de recursos para educação infantil e integral, ampliação da autonomia dos estados e municípios na gestão dos recursos e maior transparência e controle social na aplicação dos recursos"
+cor = ""

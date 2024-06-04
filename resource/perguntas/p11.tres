@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual é a importância da participação dos pais e da comunidade na formulação e implementação de políticas de alimentação escolar?"
+type = 1
+options = [ "Garantir a exclusividade da escola na tomada de decisões", "Ampliar a transparência e prestação de contas do programa", "Reduzir o envolvimento dos alunos no processo educacional" ]
+correct = "Ampliar a transparência e prestação de contas do programa"
+cor = ""

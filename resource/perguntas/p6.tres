@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual órgão federal é responsável pelo PNAE?"
+type = 1
+options = [ "Ministério da Educação (MEC)", "Ministério da Saúde (MS)", "Ministério da Agricultura, Pecuária e Abastecimento (MAPA)" ]
+correct = "Ministério da Educação (MEC)"
+cor = ""

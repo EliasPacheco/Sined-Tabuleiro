@@ -1,0 +1,77 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/Inicio.gd" type="Script" id=1]
+[ext_resource path="res://imagens/Sined imagens/2.png" type="Texture" id=2]
+[ext_resource path="res://audio/mouse.ogg" type="AudioStream" id=3]
+[ext_resource path="res://audio/errado.ogg" type="AudioStream" id=4]
+[ext_resource path="res://imagens/Sined imagens/5.png" type="Texture" id=5]
+[ext_resource path="res://imagens/Sined imagens/trofeu.png" type="Texture" id=6]
+[ext_resource path="res://imagens/Botões Game Of Privacy (1)/teladojogo.png" type="Texture" id=8]
+
+[node name="Inicio" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Teladojogo" type="Sprite" parent="."]
+visible = false
+position = Vector2( 680.5, 382.5 )
+scale = Vector2( 0.713021, 0.710185 )
+texture = ExtResource( 8 )
+
+[node name="Teste" type="Sprite" parent="."]
+position = Vector2( 683, 385 )
+scale = Vector2( 1.00146, 1.01042 )
+texture = ExtResource( 2 )
+
+[node name="clique" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="gop" type="Button" parent="."]
+margin_left = 565.0
+margin_top = 391.0
+margin_right = 794.0
+margin_bottom = 638.0
+flat = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="gopi" type="TextureRect" parent="gop"]
+margin_left = -12.0
+margin_top = 2.0
+margin_right = 488.0
+margin_bottom = 502.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 5 )
+
+[node name="maximo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="tween" type="Tween" parent="."]
+
+[node name="gameover" type="Button" parent="."]
+visible = false
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 79.0
+margin_bottom = 72.0
+flat = true
+
+[node name="campeao" type="Button" parent="."]
+margin_left = 1294.0
+margin_top = 704.0
+margin_right = 1360.0
+margin_bottom = 769.0
+flat = true
+
+[node name="Trofeu" type="Sprite" parent="."]
+position = Vector2( 1327, 736 )
+scale = Vector2( 0.170695, 0.194297 )
+texture = ExtResource( 6 )
+
+[connection signal="pressed" from="gop" to="." method="_on_gop_pressed"]
+[connection signal="mouse_entered" from="gop/gopi" to="." method="_on_gopi_mouse_entered"]
+[connection signal="mouse_exited" from="gop/gopi" to="." method="_on_gopi_mouse_exited"]
+[connection signal="pressed" from="gameover" to="." method="_on_gameover_pressed"]
+[connection signal="pressed" from="campeao" to="." method="_on_campeao_pressed"]

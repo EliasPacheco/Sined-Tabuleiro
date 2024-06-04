@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Como o PNAE contribui para a sustentabilidade ambiental?"
+type = 1
+options = [ "Incentivando o consumo de alimentos importados.", "Promovendo a compra de alimentos da agricultura familiar e local.", "Desencorajando a produção local." ]
+correct = "Promovendo a compra de alimentos da agricultura familiar e local."
+cor = ""

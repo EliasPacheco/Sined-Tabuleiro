@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "A quem cabe a responsabilidade de elaborar o cardápio da alimentação escolar? "
+type = 1
+options = [ "Ao nutricionista da escola", "Ao diretor da escola", "Ao Conselho Escolar  " ]
+correct = "Ao nutricionista da escola"
+cor = ""

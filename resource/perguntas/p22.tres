@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Por que é essencial que os motoristas de transporte escolar recebam treinamento específico sobre segurança e procedimentos de emergência?"
+type = 1
+options = [ "Para aumentar a velocidade dos veículos durante o trajeto", "Para garantir que os alunos sejam monitorados de forma excessiva durante o trajeto", "Para prepará-los para lidar com situações imprevistas e garantir a segurança dos passageiros" ]
+correct = "30%Para garantir que os alunos sejam monitorados de forma excessiva durante o trajeto"
+cor = ""

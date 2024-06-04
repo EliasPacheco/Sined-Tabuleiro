@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Como as políticas de manutenção de frota podem afetar a eficiência e a segurança do serviço de transporte escolar?"
+type = 1
+options = [ "Elas não têm impacto significativo no desempenho do serviço", "Podem garantir que os veículos estejam em boas condições de funcionamento e reduzir o risco de falhas mecânicas", "Aumentam os custos operacionais sem benefícios tangíveis para os alunos" ]
+correct = "Podem garantir que os veículos estejam em boas condições de funcionamento e reduzir o risco de falhas mecânicas"
+cor = ""

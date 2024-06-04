@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual é a porcentagem mínima do orçamento do PNAE que deve ser utilizada para a compra de produtos da agricultura familiar?"
+type = 1
+options = [ "10%", "20%", "30%" ]
+correct = "30%"
+cor = ""

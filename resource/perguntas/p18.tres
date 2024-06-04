@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual é a importância da manutenção preventiva dos veículos utilizados no transporte escolar?"
+type = 1
+options = [ "Reduzir o tempo de trajeto entre escola e casa", "Evitar acidentes e garantir a segurança dos passageiros", "Aumentar a velocidade máxima dos veículos" ]
+correct = "Evitar acidentes e garantir a segurança dos passageiros"
+cor = ""

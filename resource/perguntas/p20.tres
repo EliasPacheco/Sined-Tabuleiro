@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Quais são os procedimentos recomendados em caso de emergência durante o transporte escolar?"
+type = 1
+options = [ "Ignorar os sinais de alerta e continuar com o trajeto normal", "Manter os alunos dentro do veículo e aguardar instruções do motorista", "Permitir que os alunos saiam do veículo imediatamente, sem supervisão" ]
+correct = "Manter os alunos dentro do veículo e aguardar instruções do motorista"
+cor = ""

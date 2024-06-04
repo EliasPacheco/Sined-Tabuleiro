@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual a idade mínima exigida por lei para um condutor de transporte escolar?"
+type = 1
+options = [ "18 anos completos.", "21 anos completos e Carteira Nacional de Habilitação (CNH) categoria D.", "25 anos completos e experiência comprovada em transporte escolar." ]
+correct = "21 anos completos e Carteira Nacional de Habilitação (CNH) categoria D."
+cor = ""

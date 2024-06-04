@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual é a importância da comunicação eficaz entre os pais/responsáveis e o pessoal do transporte escolar?"
+type = 1
+options = [ "Para aumentar o número de alunos por veículo e reduzir os custos", "Para garantir que os alunos não sejam monitorados durante o trajeto", "Para relatar incidentes ou preocupações relacionadas à segurança dos alunos" ]
+correct = "Para relatar incidentes ou preocupações relacionadas à segurança dos alunos"
+cor = ""

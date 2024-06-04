@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual a importância da educação alimentar e nutricional na escola?"
+type = 1
+options = [ "Promover hábitos alimentares saudáveis e prevenir doenças crônicas.", "Diminuir o desperdício de alimentos na escola.", "Todas as alternativas acima." ]
+correct = "Todas as alternativas acima."
+cor = ""

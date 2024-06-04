@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Como você pode participar do acompanhamento da aplicação do Fundeb?"
+type = 1
+options = [ "Ignorando completamente o assunto", "Espalhando boatos e desinformação nas redes sociais", "Acessando os sites do MEC, FNDE e Undime, buscando os conselhos de acompanhamento e controle social do Fundo em seu estado ou município e participando de audiências públicas e outras atividades promovidas pelos órgãos competentes" ]
+correct = "Acessando os sites do MEC, FNDE e Undime, buscando os conselhos de acompanhamento e controle social do Fundo em seu estado ou município e participando de audiências públicas e outras atividades promovidas pelos órgãos competentes"
+cor = ""

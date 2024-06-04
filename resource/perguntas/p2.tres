@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "É permitido oferecer alimentos industrializados na alimentação escolar?"
+type = 1
+options = [ "Sim, sem restrições.", "Sim, desde que sejam integrais e sem adição de açúcares, gorduras trans e sódio.", "Não, é proibido oferecer qualquer tipo de alimento industrializado." ]
+correct = "Sim, desde que sejam integrais e sem adição de açúcares, gorduras trans e sódio."
+cor = ""

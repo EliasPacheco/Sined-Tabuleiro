@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual é o objetivo principal da introdução de alimentos orgânicos na alimentação escolar?"
+type = 1
+options = [ "Reduzir a variedade de nutrientes consumidos pelos alunos", "Apoiar práticas agrícolas sustentáveis e reduzir a exposição a pesticidas", "Aumentar os custos operacionais das escolas" ]
+correct = "Apoiar práticas agrícolas sustentáveis e reduzir a exposição a pesticidas"
+cor = ""

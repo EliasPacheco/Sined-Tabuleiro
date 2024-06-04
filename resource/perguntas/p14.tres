@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual é a importância dos nutricionistas no PNAE?"
+type = 1
+options = [ "Apenas para a fiscalização das escolas.", "Para a elaboração dos cardápios e monitoramento da qualidade nutricional dos alimentos.", "Para ensinar culinária aos alunos." ]
+correct = "Para a elaboração dos cardápios e monitoramento da qualidade nutricional dos alimentos."
+cor = ""

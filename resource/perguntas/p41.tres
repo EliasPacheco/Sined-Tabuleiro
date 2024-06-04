@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual lei institui o Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação (Fundeb)?"
+type = 1
+options = [ "Lei de Diretrizes e Bases da Educação Nacional (LDB)", "Lei nº 8.069/1990, que dispõe sobre o Estatuto da Criança e do Adolescente (ECA) ", "Lei nº 10.176/2001" ]
+correct = "Lei nº 10.176/2001"
+cor = ""

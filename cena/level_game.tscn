@@ -1,0 +1,401 @@
+[gd_scene load_steps=38 format=2]
+
+[ext_resource path="res://scripts/level/level_game.gd" type="Script" id=1]
+[ext_resource path="res://resource/bd/SinedBD.tres" type="Resource" id=2]
+[ext_resource path="res://audio/correto.ogg" type="AudioStream" id=3]
+[ext_resource path="res://audio/errado.ogg" type="AudioStream" id=4]
+[ext_resource path="res://imagens/1.png" type="Texture" id=5]
+[ext_resource path="res://imagens/Sined imagens/3.png" type="Texture" id=6]
+[ext_resource path="res://legendas/Roboto-Black.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://imagens/gameover.png" type="Texture" id=8]
+[ext_resource path="res://imagens/Tela GoP/6.png" type="Texture" id=9]
+[ext_resource path="res://imagens/CIRCULO.png" type="Texture" id=10]
+[ext_resource path="res://audio/alerta.ogg" type="AudioStream" id=11]
+[ext_resource path="res://imagens/Tela GoP/7.png" type="Texture" id=12]
+[ext_resource path="res://imagens/GoP tela (1)/4.png" type="Texture" id=13]
+[ext_resource path="res://imagens/button/6.png" type="Texture" id=14]
+[ext_resource path="res://imagens/button/5.png" type="Texture" id=15]
+[ext_resource path="res://imagens/GoP tela (1)/5.png" type="Texture" id=16]
+[ext_resource path="res://audio/alertaa.ogg" type="AudioStream" id=17]
+[ext_resource path="res://scripts/level/recorde.gd" type="Script" id=18]
+[ext_resource path="res://legendas/Roboto-Bold.ttf" type="DynamicFontData" id=19]
+[ext_resource path="res://imagens/estrelas/5 estrelas.png" type="Texture" id=20]
+[ext_resource path="res://imagens/estrelas/4 estrelas.png" type="Texture" id=21]
+[ext_resource path="res://imagens/estrelas/1 estrela.png" type="Texture" id=22]
+[ext_resource path="res://imagens/estrelas/2 estrelas.png" type="Texture" id=23]
+[ext_resource path="res://imagens/estrelas/3 estrelas.png" type="Texture" id=24]
+[ext_resource path="res://legendas/Roboto-Medium.ttf" type="DynamicFontData" id=25]
+
+[sub_resource type="DynamicFont" id=2]
+size = 28
+font_data = ExtResource( 7 )
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="DynamicFont" id=11]
+size = 22
+font_data = ExtResource( 25 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 22
+font_data = ExtResource( 25 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 22
+font_data = ExtResource( 25 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 32
+font_data = ExtResource( 25 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 18
+font_data = ExtResource( 25 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 72
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 22
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 22
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 19
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 18
+font_data = ExtResource( 7 )
+
+[node name="level_game" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -400.0
+margin_top = -305.0
+margin_right = 400.0
+margin_bottom = 300.0
+script = ExtResource( 1 )
+bd_quiz = ExtResource( 2 )
+cor_certa = Color( 0.145098, 1, 0, 1 )
+cor_errada = Color( 1, 0, 0, 1 )
+
+[node name="Amarelo" type="Sprite" parent="."]
+visible = false
+position = Vector2( 402, 303 )
+texture = ExtResource( 16 )
+
+[node name="Vermelho" type="Sprite" parent="."]
+visible = false
+position = Vector2( 402, 303 )
+texture = ExtResource( 13 )
+
+[node name="FundoAzul" type="Sprite" parent="."]
+position = Vector2( 400.5, 304 )
+scale = Vector2( 1.00073, 1.0026 )
+texture = ExtResource( 6 )
+
+[node name="PerguntaQuiz" type="Sprite" parent="."]
+visible = false
+position = Vector2( 422, 416 )
+scale = Vector2( 0.8, 0.6 )
+texture = ExtResource( 9 )
+
+[node name="alternativas" type="Node2D" parent="."]
+visible = false
+
+[node name="resposta1" type="Sprite" parent="alternativas"]
+position = Vector2( 724, 219 )
+scale = Vector2( 0.851621, 0.617647 )
+texture = ExtResource( 12 )
+
+[node name="resposta2" type="Sprite" parent="alternativas"]
+position = Vector2( 727, 406 )
+scale = Vector2( 0.851621, 0.617647 )
+texture = ExtResource( 12 )
+
+[node name="resposta3" type="Sprite" parent="alternativas"]
+position = Vector2( 727, 587 )
+scale = Vector2( 0.851621, 0.617647 )
+texture = ExtResource( 12 )
+
+[node name="question_info" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -590.0
+margin_top = 44.5
+margin_right = -143.0
+margin_bottom = 347.5
+alignment = 1
+
+[node name="txt_question" type="Label" parent="question_info"]
+margin_top = 4.0
+margin_right = 447.0
+margin_bottom = 74.0
+rect_min_size = Vector2( 0, 70 )
+size_flags_vertical = 6
+custom_fonts/font = SubResource( 2 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="image_holder" type="Panel" parent="question_info"]
+margin_top = 83.0
+margin_right = 447.0
+margin_bottom = 303.0
+rect_min_size = Vector2( 0, 220 )
+custom_styles/panel = SubResource( 1 )
+
+[node name="question_image" type="TextureRect" parent="question_info/image_holder"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 21.0
+margin_right = -23.0
+margin_bottom = -44.0
+expand = true
+stretch_mode = 6
+
+[node name="question_video" type="VideoPlayer" parent="question_info/image_holder"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="question_audio" type="AudioStreamPlayer" parent="question_info/image_holder"]
+
+[node name="question_holder" type="Control" parent="."]
+anchor_left = 0.063
+anchor_right = 0.063
+margin_left = 259.6
+margin_top = 176.0
+margin_right = 924.6
+margin_bottom = 663.0
+
+[node name="button_option_1" type="Button" parent="question_holder"]
+margin_left = 9.0
+margin_top = 5.0
+margin_right = 657.0
+margin_bottom = 131.0
+size_flags_vertical = 3
+flat = true
+
+[node name="Label" type="Label" parent="question_holder/button_option_1"]
+margin_left = 14.0
+margin_top = 8.0
+margin_right = 626.0
+margin_bottom = 114.0
+custom_fonts/font = SubResource( 11 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="button_option_2" type="Button" parent="question_holder"]
+margin_left = 17.0
+margin_top = 177.0
+margin_right = 651.0
+margin_bottom = 308.0
+size_flags_vertical = 3
+flat = true
+clip_text = true
+
+[node name="Label" type="Label" parent="question_holder/button_option_2"]
+margin_left = 5.0
+margin_top = 4.0
+margin_right = 637.0
+margin_bottom = 106.0
+custom_fonts/font = SubResource( 12 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="button_option_3" type="Button" parent="question_holder"]
+margin_left = 17.0
+margin_top = 352.0
+margin_right = 651.0
+margin_bottom = 477.0
+size_flags_vertical = 3
+flat = true
+clip_text = true
+
+[node name="Label" type="Label" parent="question_holder/button_option_3"]
+margin_left = 5.0
+margin_top = 10.0
+margin_right = 632.0
+margin_bottom = 104.0
+custom_fonts/font = SubResource( 13 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="game_over" type="Panel" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 52.0
+margin_right = -49.0
+
+[node name="Quiz1" type="Sprite" parent="game_over"]
+position = Vector2( 346, 250 )
+scale = Vector2( 0.310406, 0.266062 )
+texture = ExtResource( 8 )
+
+[node name="5Estrelas" type="Sprite" parent="game_over"]
+position = Vector2( 360, 440 )
+scale = Vector2( 0.297222, 0.276157 )
+texture = ExtResource( 20 )
+
+[node name="4Estrelas" type="Sprite" parent="game_over"]
+position = Vector2( 355, 440 )
+scale = Vector2( 0.297, 0.276 )
+texture = ExtResource( 21 )
+
+[node name="3Estrelas" type="Sprite" parent="game_over"]
+position = Vector2( 360, 440 )
+scale = Vector2( 0.297, 0.276 )
+texture = ExtResource( 24 )
+
+[node name="2Estrelas" type="Sprite" parent="game_over"]
+position = Vector2( 360, 440 )
+scale = Vector2( 0.297, 0.276 )
+texture = ExtResource( 23 )
+
+[node name="1Estrela" type="Sprite" parent="game_over"]
+position = Vector2( 360, 440 )
+scale = Vector2( 0.297, 0.276 )
+texture = ExtResource( 22 )
+
+[node name="2" type="Sprite" parent="game_over"]
+position = Vector2( 77.0001, 77.0001 )
+scale = Vector2( 0.313, 0.3 )
+texture = ExtResource( 5 )
+
+[node name="txt_result" type="Label" parent="game_over"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -21.5
+margin_top = -250.0
+margin_right = 27.5
+margin_bottom = -212.0
+custom_fonts/font = SubResource( 10 )
+text = "0/0"
+align = 1
+valign = 1
+
+[node name="txt_avaliacao" type="Label" parent="game_over"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -211.5
+margin_top = 147.0
+margin_right = 242.5
+margin_bottom = 224.0
+custom_fonts/font = SubResource( 9 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="btn_menu" type="TextureButton" parent="game_over"]
+margin_left = 262.0
+margin_top = 532.0
+margin_right = 657.0
+margin_bottom = 632.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 15 )
+texture_pressed = ExtResource( 14 )
+texture_hover = ExtResource( 14 )
+
+[node name="audio_correto" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="audio_errado" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="txt_qntd" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -13.0
+margin_top = 310.0
+margin_right = 2.0
+margin_bottom = 329.0
+custom_fonts/font = SubResource( 6 )
+
+[node name="txt_timer" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 558.0
+margin_top = -3.0
+margin_right = 601.0
+margin_bottom = 86.0
+custom_fonts/font = SubResource( 6 )
+
+[node name="redondo" type="TextureProgress" parent="."]
+margin_left = 921.0
+margin_top = -40.0
+margin_right = 1945.0
+margin_bottom = 984.0
+rect_scale = Vector2( 0.15, 0.15 )
+max_value = 31.0
+texture_under = ExtResource( 10 )
+texture_progress = ExtResource( 10 )
+fill_mode = 4
+tint_progress = Color( 1, 0, 0, 1 )
+
+[node name="timer" type="Timer" parent="."]
+autostart = true
+
+[node name="recorde" type="Label" parent="."]
+visible = false
+margin_left = 604.0
+margin_top = 104.0
+margin_right = 617.0
+margin_bottom = 131.0
+custom_fonts/font = SubResource( 8 )
+text = "0"
+script = ExtResource( 18 )
+
+[node name="txt_recorde" type="Label" parent="."]
+visible = false
+margin_left = 446.0
+margin_top = 104.0
+margin_right = 596.0
+margin_bottom = 131.0
+custom_fonts/font = SubResource( 7 )
+text = "Maior Recorde:"
+
+[node name="valor" type="Label" parent="."]
+visible = false
+margin_left = 300.0
+margin_top = 105.0
+margin_right = 311.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 14 )
+text = "0"
+
+[node name="Acertivas" type="Label" parent="."]
+visible = false
+margin_left = 207.0
+margin_top = 105.0
+margin_right = 293.0
+margin_bottom = 127.0
+custom_fonts/font = SubResource( 15 )
+text = "Assertivas: "
+
+[node name="alerta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
+[node name="alertaa" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+
+[connection signal="pressed" from="game_over/btn_menu" to="." method="_on_btn_menu_pressed"]
+[connection signal="ready" from="timer" to="." method="_on_timer_ready"]
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual é a base para o cálculo do montante de recursos financeiros destinados anualmente aos entes federados pelo PNATE?"
+type = 1
+options = [ "População total do estado ou município", "Censo escolar do ano anterior", "Número de professores da rede pública" ]
+correct = "Censo escolar do ano anterior"
+cor = ""

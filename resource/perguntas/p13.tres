@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Por que é importante que os programas de alimentação escolar considerem as preferências culturais e regionais dos alunos?"
+type = 1
+options = [ "Para desencorajar a diversidade alimentar e cultural", "Para aumentar o desperdício de alimentos", "Para garantir a aceitação e adesão dos alunos ao programa alimentar" ]
+correct = "Para garantir a aceitação e adesão dos alunos ao programa alimentar"
+cor = ""

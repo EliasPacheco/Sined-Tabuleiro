@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual é o papel dos programas de educação alimentar na eficácia da alimentação escolar? "
+type = 1
+options = [ "Promover a competitividade entre as instituições escolares", "Fomentar a conscientização sobre hábitos alimentares saudáveis", "Reduzir os custos operacionais das escolas" ]
+correct = "Fomentar a conscientização sobre hábitos alimentares saudáveis"
+cor = ""

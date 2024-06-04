@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual a porcentagem mínima dos recursos do Fundeb que deve ser destinada à remuneração dos profissionais da educação?"
+type = 1
+options = [ "50%", "60%", "70%" ]
+correct = "70%"
+cor = ""

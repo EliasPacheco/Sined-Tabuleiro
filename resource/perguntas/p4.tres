@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual a importância da participação da família na promoção da alimentação saudável dos alunos?"
+type = 1
+options = [ "Estimular o consumo de frutas, verduras e legumes em casa.", "Orientar sobre a escolha de alimentos saudáveis no supermercado.", "Todas as alternativas acima." ]
+correct = "Todas as alternativas acima."
+cor = ""

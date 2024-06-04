@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual o papel da sociedade civil na implementação do Fundeb?"
+type = 1
+options = [ "Aguardar passivamente as ações do Governo Federal", "Criticar e desqualificar o trabalho dos profissionais da educação", "Cobrar transparência dos governos, denunciar irregularidades e participar dos conselhos de acompanhamento e controle social do Fundo" ]
+correct = "Cobrar transparência dos governos, denunciar irregularidades e participar dos conselhos de acompanhamento e controle social do Fundo"
+cor = ""
